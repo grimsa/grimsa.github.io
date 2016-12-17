@@ -25,5 +25,14 @@ footer {
   font-size: $footer-font-size;
   font-weight: $footer-font-weight;
   padding: $footer-padding;
-  text-align: center;
+  text-align: left;
+  
+  a {
+    color: $footer-color;
+    background-image: none;
+  }
+    
+  a:hover , a:focus, a:active {
+    background-image: none;
+  }
 }

@@ -6,9 +6,6 @@ description: "A Java-flavoured blog about lessons learned in software developmen
 baseurl:     ""
 url:         "http://g.rimsa.lt"
 date_format: "%Y-%m-%d"
-header_pages:
- - about.md
- - contact.html
 
 # Google services
 google_verification:
