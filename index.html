@@ -8,7 +8,7 @@ layout: default
     <div class="posts">
       {% for post in paginator.posts %}
         <div class="post">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          <div class="post-meta">{{ post.date | date: site.date_format }}</div>
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h1 class="h3 post-title">{{ post.title }}</h1></a>
         </div>
       {% endfor %}
