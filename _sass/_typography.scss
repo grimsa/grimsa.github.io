@@ -22,3 +22,9 @@ sup {
   vertical-align: middle;
   top: -0.9ex;
 }
+
+article > p,
+article > blockquote,
+article > ul {
+	font-family: $content-font-family;
+}
