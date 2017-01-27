@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Multi-table update/delete handling strategies for Hibernate
+title:      "Hibernate: Multi-table update/delete handling strategies"
 date:       2016-12-24 15:20:47
-summary:    Hibernate's MultiTableBulkIdStrategy and its implementations
+summary:    "Hibernate's MultiTableBulkIdStrategy and its implementations"
 categories: hibernate
 ---
 
