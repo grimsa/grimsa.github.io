@@ -22,13 +22,14 @@ One of such cases is described below.
 We were building a new REST API.
 A good part of it was already done when we discovered a limitation in provided infrastructure: our Enterprise Service Bus (ESB) could only expose SOAP services.
 
-REST support was promised to come soon, but we had to expose our functionality to the clients before that.
+REST support was promised to come soon, but we had to expose our functionality to the clients sooner.
 
-The obvious solution here was to build a throwaway SOAP API and ask our clients to upgrade to REST later, but it did not feel right.
-
-Fortunately, instead of adding an unwelcome SOAP API, another solution came to my mind.
+The easy solution would have been to build a throwaway SOAP API and ask our clients to upgrade to REST later.
+However, adding an unwelcome SOAP API did not feel right.
 
 ## The solution
+
+What felt right was solving this challenge in a generic way that would require almost no extra work on both service provider and service consumer sides.
 
 The idea was to use SOAP messages for transferring request and response data, yet make it invisible to both service providers and consumers.
 
