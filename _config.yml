@@ -1,8 +1,9 @@
 # Site settings
-title:       Things I Learn On The Way
+title:       Gediminas Rimša
+subtitle:    Reporting from corporate Java trenches
 email:       gediminas.rimsa@gmail.com
 author:      Gediminas Rimša
-description: "A Java-flavoured blog about lessons learned in software development"
+description: "A Java-flavoured blog about lessons learned in enterprise software development"
 baseurl:     ""
 url:         "http://g.rimsa.lt"
 date_format: "%Y-%m-%d"
