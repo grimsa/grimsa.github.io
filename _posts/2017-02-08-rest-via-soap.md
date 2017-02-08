@@ -1,16 +1,9 @@
 ---
 layout:     post
-title:      A hack to expose RESTful services via SOAP
-summary:    A hack to expose RESTful services via SOAP
+title:      "A hack to expose RESTful services via SOAP"
+date:       2017-02-08 07:12:47
+summary:    "A hack to expose RESTful services via SOAP"
 categories: hacks services rest soap
-
-
-x: My audience
-x: Backend Java developers in a corporate environment
-x: Backend Java from corporate trenches
-x: I help backend java developers to transform
-x: creativity loves constraints
-
 ---
 
 Working in a corporation you sometimes face constraints that would seem strange and artificial to someone working in a small company.
@@ -22,7 +15,7 @@ One of such cases is described below.
 We were building a new REST API.
 A good part of it was already done when we discovered a limitation in provided infrastructure: our Enterprise Service Bus (ESB) could only expose SOAP services.
 
-REST support was promised to come soon, but we had to expose our functionality to the clients sooner.
+REST support was promised to come soon, but we had to expose our functionality to the clients before that.
 
 The easy solution would have been to build a throwaway SOAP API and ask our clients to upgrade to REST later.
 However, adding an unwelcome SOAP API did not feel right.
@@ -31,7 +24,7 @@ However, adding an unwelcome SOAP API did not feel right.
 
 What felt right was solving this challenge in a generic way that would require almost no extra work on both service provider and service consumer sides.
 
-The idea was to use SOAP messages for transferring request and response data, yet make it invisible to both service providers and consumers.
+The idea was to use SOAP messages for transferring request and response data, yet make them invisible to both service providers and consumers.
 
 If direct access to a REST API looked like this:
 
@@ -45,9 +38,9 @@ Then this is the *REST via SOAP* solution:
 
 #### How does it work?
 
-Let's say we have a *REST API* that allows its clients to create Greeting instances.
+Let's say we have a REST API that allows its clients to create Greeting instances.
 
-1. The client then sends a `POST` request with `{ "content" : "Hello!" }` content to a remote `/api/greetings` endpoint.
+1. The client then sends a `POST` request with `{ "content" : "Hello!" }` body to a remote `/api/greetings` endpoint.
 1. *REST Interceptor* captures this outgoing HTTP request, transforms it into a SOAP request seen below and sends it to a remote *SOAP Proxy for REST API* (e.g. `/soap-api`).
 {% highlight xml %}
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://g.rimsa.lt/rest-via-soap/" >
@@ -79,12 +72,9 @@ Let's say we have a *REST API* that allows its clients to create Greeting instan
 1. *REST Interceptor* unwraps it and the client receives a regular HTTP response with status `200` and `{ "id" : 123 }` as the body, same as via a direct call to *REST API*.
 
 
-#### Why is it cool?
-The problem stated first is solved in a simple, generic, low-effort way. It is also very easy for clients to switch to use the real REST API once it is accessible directly.
-
 ## The implementation
-When this *REST via SOAP* idea first came to my mind, I got curious how difficult would it be to write a generic Servlet Filter to act as the *SOAP Proxy for REST API*.
+When this *REST via SOAP* idea was born, I set out to write a generic Servlet Filter to act as the *SOAP Proxy for REST API*.
 
-It turned out to not be too difficult, so you can find the code in [*REST via SOAP* project on GitHub](https://github.com/grimsa/rest-via-soap).
+It turned out well and you can now find the code in [*REST via SOAP* project on GitHub](https://github.com/grimsa/rest-via-soap).
 
-However, as we ended up not needing it in the project we were doing at the time, it was not tested in a real setting and the *REST Interceptor* part remains to be implemented.
+However, as we ended up not needing it in the project we were doing at the time, it was not tested in a real-world setting and the *REST Interceptor* part remains to be implemented.
