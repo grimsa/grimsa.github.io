@@ -2,7 +2,7 @@
 layout:     post
 title:      "A hack to expose RESTful services via SOAP"
 date:       2017-02-08 07:12:47
-summary:    "A hack to expose RESTful services via SOAP"
+summary:    "Use SOAP as an invisible transport layer for accessing REST API"
 categories: hacks services rest soap
 ---
 
