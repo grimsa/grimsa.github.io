@@ -1,9 +1,10 @@
 ---
-layout:     post
-title:      "Hibernate: Multi-table update/delete handling strategies"
-date:       2016-12-24 15:20:47
-summary:    "Hibernate's MultiTableBulkIdStrategy and its implementations"
-categories: hibernate
+layout:      post
+title:       "Hibernate: Multi-table update/delete handling strategies"
+date:        2016-12-24 15:20:47
+update_date: 2017-07-18 07:26:00
+summary:     "Hibernate's MultiTableBulkIdStrategy and its implementations"
+categories:  hibernate
 ---
 
 If you ever used a hierarchical entity model with Hibernate, you might have noticed similar DDL statements being generated on application startup:
@@ -156,3 +157,9 @@ The need for bulk update or delete operations (based on non-PK columns) on entit
 However, when creation of ID tables is either problematic or not possible, one of existing alternative `MultiTableBulkIdStrategy` implementations could be used.
 
 Or, as they say, you can always roll your own.
+
+## 2017-07-18 Update
+
+Hibernate 5.2.8 added a number of new [Bulk-id strategies when you can’t use temporary tables](http://in.relation.to/2017/02/01/non-temporary-table-bulk-id-strategies/).
+
+These new strategies have only slight differences and a good starting point is to go with `InlineIdsOrClauseBulkIdStrategy`, which is supported by all major relational database systems.
