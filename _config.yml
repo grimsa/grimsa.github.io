@@ -1,9 +1,9 @@
 # Site settings
 title:       Gediminas Rimša
-subtitle:    Reporting from corporate Java trenches
+subtitle:    Reflecting on software design and construction
 email:       gediminas.rimsa@gmail.com
 author:      Gediminas Rimša
-description: "A Java-flavoured blog about lessons learned in enterprise software development"
+description: "Gediminas Rimša sharing ideas he considers essential for building software well."
 baseurl:     ""
 url:         "https://g.rimsa.lt"
 date_format: "%Y-%m-%d"
