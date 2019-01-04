@@ -5,7 +5,7 @@ email:       gediminas.rimsa@gmail.com
 author:      Gediminas Rimša
 description: "A Java-flavoured blog about lessons learned in enterprise software development"
 baseurl:     ""
-url:         "http://g.rimsa.lt"
+url:         "https://g.rimsa.lt"
 date_format: "%Y-%m-%d"
 
 # Google services
