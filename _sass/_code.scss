@@ -19,6 +19,7 @@ pre {
   overflow-x: scroll;
   margin-bottom: 0.88em;
   background-color: $pre-background-color;
+  font-size: $pre-font-size;
   counter-reset: line-numbering;
   white-space: pre;
   overflow-x: auto;
