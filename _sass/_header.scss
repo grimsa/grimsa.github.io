@@ -5,7 +5,7 @@
 
 .site-header a {
   color: #333;
-  font-size: $h3;
+  font-size: $h5;
   font-weight: 300;
   background-image: none;
 }
@@ -32,7 +32,6 @@
 .site-header nav a:active {
   color: #444;
   opacity: 1;
-  border-bottom: 2px solid #444;
 }
 
 .site-nav a + a {

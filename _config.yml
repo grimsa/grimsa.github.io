@@ -7,6 +7,8 @@ description: "Gediminas Rimša sharing ideas he considers essential for building
 baseurl:     ""
 url:         "https://g.rimsa.lt"
 date_format: "%Y-%m-%d"
+header_pages:
+ - about.md
 
 # Google services
 google_verification:
