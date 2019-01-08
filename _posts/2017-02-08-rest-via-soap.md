@@ -4,6 +4,7 @@ title:      "A hack to expose RESTful services via SOAP"
 date:       2017-02-08 07:12:47
 summary:    "Use SOAP as an invisible transport layer for accessing REST API"
 categories: hacks services rest soap
+hidden:     true
 ---
 
 Working in a corporation you sometimes face constraints that would seem strange and artificial to someone working in a small company.

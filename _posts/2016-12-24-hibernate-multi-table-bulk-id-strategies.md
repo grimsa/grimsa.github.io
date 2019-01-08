@@ -5,6 +5,7 @@ date:        2016-12-24 15:20:47
 update_date: 2017-07-18 07:26:00
 summary:     "Hibernate's MultiTableBulkIdStrategy and its implementations"
 categories:  hibernate
+hidden:      true
 ---
 
 If you ever used a hierarchical entity model with Hibernate, you might have noticed similar DDL statements being generated on application startup:
