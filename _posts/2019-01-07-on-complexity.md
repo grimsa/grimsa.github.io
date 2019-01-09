@@ -3,6 +3,7 @@ layout:      post
 title:       "On complexity"
 date:        2019-01-08 08:00:00
 summary:     "Thoughts on complexity of systems, separating essential and accidental complexity and why simplicity is not easy."
+description: "Thoughts on complexity of systems, separating essential and accidental complexity and why simplicity is not easy."
 categories:  complexity simplicity principles
 ---
 
