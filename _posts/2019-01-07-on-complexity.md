@@ -13,6 +13,10 @@ categories:  complexity simplicity principles
 In the preface of the *Domain-Driven Design* book, Eric Evans mentions *the ceiling of complexity* in passing.
 
 We can think about it as a natural limit of how complex a system can become before becoming intellectually unmanageable.
+
+![Diagram showing how effort grows exponentially as complexity increases]({{ site.url }}/assets/ceiling-of-complexity.gif)
+{: .center}
+
 As we approach this limit, the system is more and more difficult to develop and maintain, causing us to expend huge resources or gamble on our changes not breaking anything.
 
 ### Essence and accident
@@ -38,6 +42,10 @@ All of the above introduce further accidental complexity, compounding our diffic
 ### The goal
 
 It seems natural that **our goal should be to eliminate as much accidental complexity as possible**.
+
+![Diagram showing elimination of accidental complexity]({{ site.url }}/assets/reducing-accidental-complexity.gif)
+{: .center}
+
 This way we can both make the system easier to understand and make more room for the essential.
 
 However, why is then dealing with accidental rather than essential so much of what we do?
