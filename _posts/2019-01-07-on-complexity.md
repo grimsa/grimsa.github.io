@@ -2,15 +2,15 @@
 layout:      post
 title:       "On complexity"
 date:        2019-01-08 08:00:00
-summary:     "Thoughts on complexity of systems, separating essential and accidental complexity and why simplicity is not easy"
-categories:  priciples, complexity
+summary:     "Thoughts on complexity of systems, separating essential and accidental complexity and why simplicity is not easy."
+categories:  complexity simplicity principles
 ---
 
-> The biggest problem in the development and maintenance of large-scale software systems is complexity — large systems are hard to understand.
+> "The biggest problem in the development and maintenance of large-scale software systems is complexity — large systems are hard to understand." — Ben Moseley and Peter Marks
 
 ### The ceiling of complexity
 
-In the preface of his DDD book, Eric Evans mentions *the ceiling of complexity* in passing.
+In the preface of the *Domain-Driven Design* book, Eric Evans mentions *the ceiling of complexity* in passing.
 
 We can think about it as a natural limit of how complex a system can become before becoming intellectually unmanageable.
 As we approach this limit, the system is more and more difficult to develop and maintain, causing us to expend huge resources or gamble on our changes not breaking anything.
@@ -35,7 +35,7 @@ Using outdated technology adds otherwise unnecessary constraints, limiting our o
 
 All of the above introduce further accidental complexity, compounding our difficulties.
 
-### The point
+### The goal
 
 It seems natural that **our goal should be to eliminate as much accidental complexity as possible**.
 This way we can both make the system easier to understand and make more room for the essential.
@@ -67,3 +67,10 @@ But we can be mindful of accidental complexity in our systems.
 Once we learn to spot it, we can rally our peers to practice simplicity with us — both by trying to come up with better designs and writing cleaner, more expressive code.
 
 Improving our collective skills makes simplicity easier to achieve, ultimately making it easier for us to cope with our systems.
+
+### Exploring this further
+
+1. [No silver bullet: Essence and accidents of software engineering](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf) - essay by Fred Brooks, 1986.
+2. [Out of the tar pit](http://moss.cs.iit.edu/cs100/papers/out-of-the-tar-pit.pdf) - a paper by Ben Moseley and Peter Marks, 2006.
+3. [Simple made easy](https://www.infoq.com/presentations/Simple-Made-Easy) - a talk by Rich Hickey, 2011.
+4. [Domain-driven design: Tackling complexity in the heart of software](https://www.goodreads.com/book/show/179133.Domain_Driven_Design) - a book by Eric Evans, 2003.
